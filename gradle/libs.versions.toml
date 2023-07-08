@@ -1,0 +1,65 @@
+[versions]
+android = "8.0.2"
+androidx-activity = "1.7.2"
+androidx-constraintlayout = "1.0.1"
+androidx-core = "1.10.1"
+androidx-junit = "1.1.5"
+androidx-lifecycle = "2.6.1"
+appcompat = "1.6.1"
+compose = "2023.06.01"
+compose-compiler = "1.4.8"
+detekt = "1.23.0"
+detekt-compiler = "0.0.4"
+detekt-compose = "0.1.10"
+detekt-junit = "0.0.6"
+espresso = "3.5.1"
+java = "17"
+junit = "4.13.2"
+kotlin = "1.8.22"
+lifecycle = "2.6.1"
+
+[libraries]
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "androidx-activity" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidx-core" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "androidx-lifecycle" }
+
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose" }
+compose-material = { group = "androidx.compose.material", name = "material" }
+compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+compose-ui = { group = "androidx.compose.ui", name = "ui" }
+compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+
+detekt-compiler = { group = "com.braisgabin.detekt", name = "kotlin-compiler-wrapper", version.ref = "detekt-compiler" }
+detekt-compose = { group = "io.nlopez.compose.rules", name = "detekt", version.ref = "detekt-compose" }
+detekt-ktlint = { group = "io.gitlab.arturbosch.detekt", name = "detekt-formatting", version.ref = "detekt" }
+
+kotlin-bom = { group = "org.jetbrains.kotlin", name = "kotlin-bom", version.ref = "kotlin" }
+
+
+[plugins]
+android-app = { id = "com.android.application", version.ref = "android" }
+android-lib = { id = "com.android.library", version.ref = "android" }
+android-kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
+
+[bundles]
+debug = [
+    "compose-ui-tooling",
+    "compose-ui-test-manifest"
+]
+detekt-plugins = [
+    "detekt-compiler",
+    "detekt-compose",
+    "detekt-ktlint"
+]
+libraries = [
+    "androidx-activity-compose",
+    "androidx-core-ktx",
+    "androidx-lifecycle-runtime-ktx",
+    "compose-material",
+    "compose-material3",
+    "compose-ui",
+    "compose-ui-tooling-preview",
+]
