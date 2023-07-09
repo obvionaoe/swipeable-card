@@ -12,7 +12,7 @@ plugins {
 
 fun version(): String {
     val os = ByteArrayOutputStream()
-    project.exec {
+    rootProject.exec {
         commandLine = "git describe".split(" ")
         standardOutput = os
     }
