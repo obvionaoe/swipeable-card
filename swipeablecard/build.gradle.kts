@@ -13,7 +13,7 @@ plugins {
 fun version(): String {
     val os = ByteArrayOutputStream()
     rootProject.exec {
-        commandLine = "git describe".split(" ")
+        commandLine = "git describe --tags --abbrev=0".split(" ")
         standardOutput = os
     }
     return String(os.toByteArray()).trim()
