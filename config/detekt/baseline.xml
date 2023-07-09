@@ -3,6 +3,7 @@
   <ManuallySuppressedIssues>
     <ID>LongMethod:MainActivity.kt$@OptIn(ExperimentalMaterialApi::class) @Composable fun Sample()</ID>
     <ID>LongMethod:SwipeableCard.kt$@OptIn( ExperimentalMaterialApi::class, ExperimentalMaterial3Api::class ) @Composable fun SwipeableCard( onClick: () -> Unit, modifier: Modifier = Modifier, enabled: Boolean = true, shape: Shape = RoundedCornerShape(16.dp), colors: CardColors = CardDefaults.cardColors(), elevation: CardElevation = CardDefaults.cardElevation(), border: BorderStroke? = null, interactionSource: MutableInteractionSource = remember { MutableInteractionSource() }, swipeableState: SwipeableState&lt;Int> = rememberSwipeableState(0), startAction: @Composable (BoxScope.() -> Unit)? = null, endAction: @Composable (BoxScope.() -> Unit)? = null, content: @Composable ColumnScope.() -> Unit )</ID>
+    <ID>LongMethod:MainActivity.kt$@OptIn(ExperimentalMaterialApi::class) @Composable fun Sample( modifier: Modifier = Modifier )</ID>
   </ManuallySuppressedIssues>
   <CurrentIssues/>
 </SmellBaseline>

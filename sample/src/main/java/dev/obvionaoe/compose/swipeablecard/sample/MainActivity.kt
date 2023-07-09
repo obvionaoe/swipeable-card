@@ -43,9 +43,11 @@ class MainActivity : ComponentActivity() {
 
 @OptIn(ExperimentalMaterialApi::class)
 @Composable
-fun Sample() {
+fun Sample(
+    modifier: Modifier = Modifier
+) {
     Column(
-        modifier = Modifier
+        modifier = modifier
             .fillMaxSize()
             .padding(10.dp),
         verticalArrangement = Arrangement.spacedBy(10.dp)
@@ -123,7 +125,7 @@ fun Sample() {
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+private fun Preview() {
     SampleTheme {
         Sample()
     }

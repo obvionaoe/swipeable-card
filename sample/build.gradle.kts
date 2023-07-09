@@ -58,8 +58,18 @@ android {
 }
 
 dependencies {
+    detektPlugins(libs.bundles.detekt.plugins)
+
     implementation(platform(libs.kotlin.bom))
     implementation(platform(libs.compose.bom))
     implementation(libs.bundles.libraries)
     implementation(project(mapOf("path" to ":swipeablecard")))
+}
+
+detekt {
+    autoCorrect = false
+    baseline = rootProject.file("config/detekt/baseline.xml")
+    basePath = rootProject.path
+    config.setFrom(rootProject.file("config/detekt/detekt.yml").path)
+    parallel = true
 }
