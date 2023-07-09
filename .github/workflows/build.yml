@@ -17,6 +17,9 @@ jobs:
           distribution: 'zulu'
           java-version: 17
 
+      - name: Test
+        run: git describe --tags --abbrev=0
+
       - name: Build
         uses: gradle/gradle-build-action@v2
         with:
