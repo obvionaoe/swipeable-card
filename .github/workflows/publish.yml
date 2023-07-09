@@ -26,12 +26,12 @@ jobs:
           distribution: 'zulu'
           java-version: 17
 
+      - run: git describe --tags --abbrev=0
+
       - name: Build
         uses: gradle/gradle-build-action@v2
         with:
           arguments: build
-
-      - run: git describe --tags --abbrev=0
 
       - name: Publish to Maven Central
         run: ./gradlew publishAllPublicationsToMavenCentral --no-configuration-cache
