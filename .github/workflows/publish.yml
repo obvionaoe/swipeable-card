@@ -31,5 +31,7 @@ jobs:
         with:
           arguments: build
 
+      - run: git describe --tags --abbrev=0
+
       - name: Publish to Maven Central
         run: ./gradlew publishAllPublicationsToMavenCentral --no-configuration-cache
