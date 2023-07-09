@@ -17,12 +17,12 @@ java = "17"
 junit = "4.13.2"
 kotlin = "1.8.22"
 lifecycle = "2.6.1"
+maven-publish = "0.25.3"
 
 [libraries]
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "androidx-activity" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidx-core" }
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "androidx-lifecycle" }
-
 compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose" }
 compose-material = { group = "androidx.compose.material", name = "material" }
 compose-material3 = { group = "androidx.compose.material3", name = "material3" }
@@ -30,19 +30,18 @@ compose-ui = { group = "androidx.compose.ui", name = "ui" }
 compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
 compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
-
 detekt-compiler = { group = "com.braisgabin.detekt", name = "kotlin-compiler-wrapper", version.ref = "detekt-compiler" }
 detekt-compose = { group = "io.nlopez.compose.rules", name = "detekt", version.ref = "detekt-compose" }
 detekt-ktlint = { group = "io.gitlab.arturbosch.detekt", name = "detekt-formatting", version.ref = "detekt" }
 
 kotlin-bom = { group = "org.jetbrains.kotlin", name = "kotlin-bom", version.ref = "kotlin" }
 
-
 [plugins]
 android-app = { id = "com.android.application", version.ref = "android" }
 android-lib = { id = "com.android.library", version.ref = "android" }
 android-kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
+maven-publish = { id = "com.vanniktech.maven.publish", version.ref = "maven-publish" }
 
 [bundles]
 debug = [
