@@ -9,7 +9,7 @@ With SwipeableCard, you can create cards with multiple action buttons hidden beh
 
 ### Adding SwipeableCard to your project
 
-<details>
+<details open>
 <summary>Kotlin</summary>
 
 ```kotlin
