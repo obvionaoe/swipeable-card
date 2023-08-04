@@ -1,7 +1,8 @@
 # SwipeableCard
 
 SwipeableCard is an easy-to-use Jetpack Compose library that allows you to implement swipeable cards in your app with minimal effort.
-With SwipeableCard, you can create cards with multiple action buttons hidden behind the card's content
+
+With SwipeableCard, you can create cards with multiple action buttons hidden behind the card's content:
 
 ![SwipeableCard Demo](demo.gif)
 
